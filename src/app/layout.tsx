@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "MemopliFy Web App",
-  description: "MemopliFy Web App",
+  title: "MempliFy Web App",
+  description: "MempliFy Web App",
 };
 
 export default function RootLayout({
