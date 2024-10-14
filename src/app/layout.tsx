@@ -1,18 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Provider } from "jotai";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider } from "@/components/custom/theme-provider";
+import { Navbar } from "@/components/custom/navbar";
 
 export const metadata: Metadata = {
   title: "MempliFy Web App",
@@ -25,11 +16,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Provider>{children}</Provider>
+    <html lang="ja" suppressHydrationWarning>
+      <body className="antialiased">
+        <Provider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Toaster position="top-center" />
+            <Navbar />
+            <div className="px-3 py-3 max-h-full">{children}</div>
+          </ThemeProvider>
+        </Provider>
       </body>
     </html>
   );
