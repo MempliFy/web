@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className="antialiased">
+      <body className="antialiased  overflow-hidden">
         <Provider>
           <ThemeProvider
             attribute="class"
@@ -27,7 +27,7 @@ export default function RootLayout({
           >
             <Toaster position="top-center" />
             <Navbar />
-            <div className="px-3 py-3 max-h-full">{children}</div>
+            <div className="px-3 py-3">{children}</div>
           </ThemeProvider>
         </Provider>
       </body>
