@@ -27,7 +27,7 @@ export default function RootLayout({
           >
             <Toaster position="top-center" />
             <Navbar />
-            <div className="px-3 py-3">{children}</div>
+            <div className="p-3">{children}</div>
           </ThemeProvider>
         </Provider>
       </body>
