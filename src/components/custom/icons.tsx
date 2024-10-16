@@ -36,3 +36,28 @@ export const ArrowUpIcon = ({ size = 16 }: { size?: number }) => {
     </svg>
   );
 };
+
+export const PaperAirplaneIcon = ({
+  size = 16,
+  rotation = 0,
+}: {
+  size?: number;
+  rotation?: number; // Rotation in degrees
+}) => {
+  return (
+    <svg
+      height={size}
+      strokeLinejoin="round"
+      viewBox="0 0 24 24"
+      width={size}
+      style={{ color: "currentcolor", transform: `rotate(${rotation}deg)` }}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M2.01 21.23L23 12 2.01 2.77 2 10l15 2-15 2z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  );
+};
