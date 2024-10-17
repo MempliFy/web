@@ -18,14 +18,20 @@ export const PaperclipIcon = ({ size = 16 }: { size?: number }) => {
   );
 };
 
-export const ArrowUpIcon = ({ size = 16 }: { size?: number }) => {
+export const ArrowIcon = ({
+  size = 16,
+  rotation = 0,
+}: {
+  size?: number;
+  rotation?: number; // Rotation in degrees
+}) => {
   return (
     <svg
       height={size}
       strokeLinejoin="round"
       viewBox="0 0 16 16"
       width={size}
-      style={{ color: "currentcolor" }}
+      style={{ color: "currentcolor", transform: `rotate(${rotation}deg)` }}
     >
       <path
         fillRule="evenodd"
@@ -58,6 +64,20 @@ export const PaperAirplaneIcon = ({
         d="M2.01 21.23L23 12 2.01 2.77 2 10l15 2-15 2z"
         fill="currentColor"
       ></path>
+    </svg>
+  );
+};
+
+export const HamBurgerIcon = ({ size = 16 }: { size?: number }) => {
+  return (
+    <svg
+      height={size}
+      strokeLinejoin="round"
+      viewBox="0 0 24 24"
+      width={size}
+      style={{ color: "currentcolor" }}
+    >
+      <path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
     </svg>
   );
 };
