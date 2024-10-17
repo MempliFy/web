@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 import { PaperAirplaneIcon, PaperclipIcon } from "./icons";
+import { toast } from "sonner";
 
 type Props = {};
 
@@ -29,8 +30,8 @@ export const MultimodalInput: React.FC<Props> = () => {
   };
 
   return (
-    <div className="flex justify-center items-center dark:bg-neutral-700 p-2 rounded-3xl w-[720px] gap-1">
-      <Button className="rounded-full p-2 h-fit bg-transparent hover:bg-transparent text-primary">
+    <div className="flex justify-center items-center bg-neutral-200 dark:bg-neutral-700 p-2 rounded-3xl w-[720px] gap-1">
+      <Button className="rounded-full p-2 h-fit bg-transparent hover:bg-transparent text-primary shadow-none">
         <PaperclipIcon size={18} />
       </Button>
       <Textarea
