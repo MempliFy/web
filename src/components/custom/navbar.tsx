@@ -5,18 +5,16 @@ import { HamBurgerIcon } from "./icons";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="bg-background sticky top-0 w-full px-3 py-3 justify-between flex flex-row items-center max-h-20">
+    <nav className="bg-background sticky top-0 w-full px-3 py-3 justify-between flex flex-row items-center max-h-20">
       <HamBurgerIcon size={24} />
       <span>MempliFy</span>
       <div className="flex flex-row items-center gap-2">
-        <Button asChild>
-          <ThemeToggle />
-        </Button>
+        <ThemeToggle />
         <Button className="py-2 px-3 h-fit font-normal" asChild>
           <Link href="/login">Login</Link>
         </Button>
       </div>
-    </div>
+    </nav>
   );
 };
 Navbar.displayName = "Navbar";
