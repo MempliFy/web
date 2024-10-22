@@ -67,17 +67,3 @@ export const PaperAirplaneIcon = ({
     </svg>
   );
 };
-
-export const HamBurgerIcon = ({ size = 16 }: { size?: number }) => {
-  return (
-    <svg
-      height={size}
-      strokeLinejoin="round"
-      viewBox="0 0 24 24"
-      width={size}
-      style={{ color: "currentcolor" }}
-    >
-      <path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-    </svg>
-  );
-};

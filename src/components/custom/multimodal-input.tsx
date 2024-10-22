@@ -39,9 +39,9 @@ export const MultimodalInput: React.FC<Props> = () => {
         className="resize-none border-none min-h-8 max-h-36 overflow-y-auto focus-visible:ring-0 focus-visible:shadow-none"
         onChange={handleInput}
         rows={1}
-        placeholder="Send a message..."
+        placeholder="Ask anything..." // Ask follow-up
       />
-      <Button className="rounded-full p-2 h-fit ">
+      <Button className="rounded-full p-2 h-fit">
         <PaperAirplaneIcon size={18} />
       </Button>
     </div>
