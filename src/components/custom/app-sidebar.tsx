@@ -12,7 +12,8 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { Bird, Home, Inbox, Calendar, Search, Settings } from "lucide-react";
+import { Bird, Home, History } from "lucide-react";
+import { ThemeToggle } from "./theme-toggle";
 
 const items = [
   {
@@ -21,24 +22,9 @@ const items = [
     icon: Home,
   },
   {
-    title: "Inbox",
+    title: "History",
     url: "#",
-    icon: Inbox,
-  },
-  {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
+    icon: History,
   },
 ];
 
@@ -73,7 +59,11 @@ export const AppSidebar: React.FC = () => {
         </SidebarGroup>
         <SidebarGroup />
       </SidebarContent>
-      <SidebarFooter>test</SidebarFooter>
+      <SidebarFooter>
+        <div className="flex flex-row items-center gap-2">
+          <ThemeToggle />
+        </div>
+      </SidebarFooter>
     </Sidebar>
   );
 };
