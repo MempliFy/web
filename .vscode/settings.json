@@ -6,5 +6,7 @@
     "Mempli",
     "sonner",
     "tailwindcss"
-  ]
+  ],
+  "cody.chat.preInstruction": "Please think thoughts in English. 出力は日本語で出力してください。",
+  "cody.edit.preInstruction": "Please think thoughts in English. 出力は日本語で出力してください。"
 }

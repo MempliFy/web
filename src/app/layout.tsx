@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/custom/theme-provider";
 import { Navbar } from "@/components/custom/navbar";
 import { AppSidebar } from "@/components/custom/app-sidebar";
-import { SidebarProvider} from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 export const metadata: Metadata = {
   title: "MempliFy Web App",
